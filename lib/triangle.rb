@@ -25,7 +25,7 @@ class Triangle
   end
   
   def false_triangle
-    a + b <= c || 
+    a + b <= c || a + c <= b || 
   end
   
 end
