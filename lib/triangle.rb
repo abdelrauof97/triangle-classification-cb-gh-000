@@ -22,13 +22,10 @@ class Triangle
     else 
       :scalene
     end
-  end
-  
-  def false_triangle
+    
   end
   
 end
-
 
 class TriangleError < StandardError
 end
