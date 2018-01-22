@@ -13,6 +13,8 @@ class Triangle
     
     if a <= 0 || b <= 0 || c <= 0 
       raise TriangleError
+    elsif self.false_triangle
+      raise TriangleError
     elsif a == b && b == c 
       :equilateral
     elsif a == b || b == c || c == a 
@@ -22,9 +24,16 @@ class Triangle
     end
   end
   
+  def false_triangle
+    a + b <= c || 
+  end
+  
 end
 
 
 class TriangleError < StandardError
-  
 end
+
+
+
+
