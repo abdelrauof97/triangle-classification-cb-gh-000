@@ -12,7 +12,7 @@ class Triangle
       :equilateral
     elsif a == b || b == c || c == a 
       :equilateral
-    elsif 
+    elsif a*a - b*b == c*c ||
       :scalene
     end
   end
